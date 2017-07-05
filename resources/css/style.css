@@ -57,7 +57,6 @@ header span {
   width:20rem;
   position: absolute;
   top: 9rem;
-  left:0rem;
 }
 
 .description h3 {
@@ -87,6 +86,10 @@ li {
 li a {
   text-decoration: none;
   color: white;
+}
+
+#mobile-show {
+  display: none;
 }
 
 .items {
@@ -165,6 +168,18 @@ footer span {
 @media only screen and (max-width:1024px) {
   #item3 {
     display: none;
+  }
+
+  #mobile-show {
+    display: flex;
+  }
+
+  #desktop-show {
+    display: none;
+  }
+
+  ul {
+    justify-content: center;
   }
 
   .site-container {
